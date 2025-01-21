@@ -1,6 +1,8 @@
-// Função para tentar logar
 async function login() {
     console.log("Tentando logar...");
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+
     try {
         const response = await fetch('auth.php', {
             method: 'POST',
@@ -8,7 +10,9 @@ async function login() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                action: 'login' // Exemplo de parâmetro enviado ao backend
+                action: 'login',
+                nome: username,
+                senha: password
             })
         });
 
@@ -20,8 +24,7 @@ async function login() {
         } else if (data.sucesso) {
             console.log("Sucesso:", data.sucesso);
             alert(`Login realizado: ${data.sucesso}`);
-        } else {
-            console.error("Erro: Resposta inesperada do servidor.");
+            window.location.href = 'painel.html'; // Redirecionar para o painel
         }
     } catch (error) {
         console.error("Erro na requisição:", error);
@@ -29,9 +32,11 @@ async function login() {
     }
 }
 
-// Função para tentar registrar
 async function register() {
     console.log("Tentando registrar...");
+    const username = document.getElementById('register-username').value;
+    const password = document.getElementById('register-password').value;
+
     try {
         const response = await fetch('auth.php', {
             method: 'POST',
@@ -39,7 +44,9 @@ async function register() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                action: 'register' // Exemplo de parâmetro enviado ao backend
+                action: 'register',
+                nome: username,
+                senha: password
             })
         });
 
@@ -51,15 +58,9 @@ async function register() {
         } else if (data.sucesso) {
             console.log("Sucesso:", data.sucesso);
             alert(`Registro realizado: ${data.sucesso}`);
-        } else {
-            console.error("Erro: Resposta inesperada do servidor.");
         }
     } catch (error) {
         console.error("Erro na requisição:", error);
         alert("Erro ao se conectar ao servidor.");
     }
 }
-
-// Event listeners (exemplo de como associar as funções a botões)
-document.getElementById('loginBtn').addEventListener('click', login);
-document.getElementById('registerBtn').addEventListener('click', register);
