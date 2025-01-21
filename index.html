@@ -18,95 +18,40 @@
 
     </header>
     <nav>
-        <a href="menu.html">Home</a>
-        <a href="index.html">Bruno</a>
+        <a href="index.html">Home</a>
+        <a href="painel.html">painel</a>
         <a href="#">Debora / Jose</a>
         <a href="#">Total de Moedas</a>
         <a href="#">Base de dados</a>
     </nav>
     
     <main>
-        <article>
-            <table>
-                <caption>
-                    teste de planilha
-                </caption>
-                <thead>
-                    <tr>
-                        <th colspan="14">compra</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>açao</th>
-                        <th>data</th>
-                        <th>ativo</th>
-                        <th>Taxa em BRL</th>
-                        <th>Taxa em Crypto</th>
-                        <th>Outras taxas</th>
-                        <th>Valor da Cota</th>
-                        <th>Quatidade Comprada</th>
-                        <th>Compra (BRL)</th>
-                        <th>Venda (BRL)</th>
-                        <th>Lucro na Operação</th>
-                        <th>Quantidade Depositada</th>
-                        <th>Saldo do dia (BRL)</th>
-                    </tr>
-                    <tr>
-                        <button onclick="calcular()">calcular</button>
-                        <th>Operação 1</th>
-                        <th><input type="date" id="data-operacao1"></th>
-                        <th><input type="text" id="input-ativo"></th>
-                        <th><input type="number" id="input-taxa-brl"></th>
-                        <th><input type="number" id="input-taxa-crypto"></th>
-                        <th><input type="number" id="input-taxa-outras"></th>
-                        <th><input type="number" id="input-valor-cota"></th>
-                        <th><input type="number" id="input-qtd-comprada"></th>
-                        <th><input type="number" id="input-compra-brl"></th>
-                        <th><input type="number" id="input-venda-brl"></th>
-                        <th><input type="number" id="input-lucro"></th>
-                        <th><input type="number" id="input-qtd-depositada"></th>
-                        <th><input type="number" id="input-saldo-dia"></th>
+        <div id="login-formulario">
+            <h2>login</h2>
+            <input type="text" id="login-username" placeholder="Nome de Usuário">
+            <input type="password" id="login-password" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+        </div>
+        <div id="register-formulario">
+            <h2>Registrar</h2>
+            <input type="text" id="register-username" placeholder="Nome de Usuário">
+            <input type="password" id="register-password" placeholder="Senha">
+            <button onclick="register()">Cadastrar</button>
+        </div>
 
-                    </tr>
-                    <tr>
-                        <th>Compra</th>
-                        <th><input type="date" id="data-operacao1"></th>
-                    </tr>
-                    <tr>
-                        <th>Compra</th>
-                        <th><input type="date" id="data-operacao1"></th>
-                    </tr>
-                    <tr>
-                        <th>Venda</th>
-                        <th><input type="date" id="data-operacao1"></th>
-                    </tr>
-                    <tr>
-                        <th>Venda</th>
-                        <th><input type="date" id="data-operacao1"></th>
-                    </tr>
-                    <tr>
-                        <th>Saldo do Dia</th>
-                        <th><input type="date" id="data-operacao1"></th>
-                    </tr>
-                    
-                </tbody>
+        <p>
+            <a href="#" onclick="toggleForm()">Não tem uma Conta? Cadastre-se</a>
+        </p>
+        
 
-                    
-            </table>
-
-
-            <p id="resultado"></p>
-
-            
-        </article>
     </main>
 
     <footer>
         <p>Site Criado por <a href="https://github.com/Bruno70i" target="_blank">Bruno Nascimento</a></p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="main.js"></script>   
 
 </body>
+
 </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Surgiu o mascote do Android</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+
+    <!-- OBSERVAÇÃO: MANTER AS PALAVRA DESTAQUE COMO <STRONG> E OS LINKS EXTERNO COM A CLASSE "externo" -->
+
+    <header>
+
+        <h1>SITE DE INVESTIMENTO</h1>
+        <p>Aqui você poderá guardar seus lançamentos e organizar suas finanças</p>
+
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="painel.html">painel</a>
+        <a href="#">Debora / Jose</a>
+        <a href="#">Total de Moedas</a>
+        <a href="#">Base de dados</a>
+    </nav>
+    
+    <main>
+        <article>
+            <table>
+                <caption>
+                    teste de planilha
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="14">compra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>açao</th>
+                        <th>data</th>
+                        <th>ativo</th>
+                        <th>Taxa em BRL</th>
+                        <th>Taxa em Crypto</th>
+                        <th>Outras taxas</th>
+                        <th>Valor da Cota</th>
+                        <th>Quatidade Comprada</th>
+                        <th>Compra (BRL)</th>
+                        <th>Venda (BRL)</th>
+                        <th>Lucro na Operação</th>
+                        <th>Quantidade Depositada</th>
+                        <th>Saldo do dia (BRL)</th>
+                    </tr>
+                    <tr>
+                        <button onclick="calcular()">calcular</button>
+                        <th>Operação 1</th>
+                        <th><input type="date" id="data-operacao1"></th>
+                        <th><input type="text" id="input-ativo"></th>
+                        <th><input type="number" id="input-taxa-brl"></th>
+                        <th><input type="number" id="input-taxa-crypto"></th>
+                        <th><input type="number" id="input-taxa-outras"></th>
+                        <th><input type="number" id="input-valor-cota"></th>
+                        <th><input type="number" id="input-qtd-comprada"></th>
+                        <th><input type="number" id="input-compra-brl"></th>
+                        <th><input type="number" id="input-venda-brl"></th>
+                        <th><input type="number" id="input-lucro"></th>
+                        <th><input type="number" id="input-qtd-depositada"></th>
+                        <th><input type="number" id="input-saldo-dia"></th>
+
+                    </tr>
+                    <tr>
+                        <th>Compra</th>
+                        <th><input type="date" id="data-operacao1"></th>
+                    </tr>
+                    <tr>
+                        <th>Compra</th>
+                        <th><input type="date" id="data-operacao1"></th>
+                    </tr>
+                    <tr>
+                        <th>Venda</th>
+                        <th><input type="date" id="data-operacao1"></th>
+                    </tr>
+                    <tr>
+                        <th>Venda</th>
+                        <th><input type="date" id="data-operacao1"></th>
+                    </tr>
+                    <tr>
+                        <th>Saldo do Dia</th>
+                        <th><input type="date" id="data-operacao1"></th>
+                    </tr>
+                    
+                </tbody>
+
+                    
+            </table>
+
+
+            <p id="resultado"></p>
+
+            
+        </article>
+    </main>
+
+    <footer>
+        <p>Site Criado por <a href="https://github.com/Bruno70i" target="_blank">Bruno Nascimento</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
