@@ -117,7 +117,7 @@ main p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
-    fonte-size: 1em;
+    font-size: 1em;
     line-height: 2em;
 }
 
@@ -126,8 +126,54 @@ main strong {
     font-weight: bold;
 }
 
+/*--------- TELA DE LOGIN --------- */
 
 
+#login-formulario > h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#login-formulario {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+
+#login-formulario > input {
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+#register-formulario > h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#register-formulario {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+#register-formulario > input {
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+button {
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: var(--cor0);
+    color: white;
+    
+}
+ 
+/*--------- TELA DE LOGIN --------- */
 
 table {
     border-collapse: collapse;
